@@ -4,7 +4,7 @@ import OrderService from '../services/ordersService';
 class OrderController {
   constructor(private orderService = new OrderService()) { }
 
-  public allOrders = async (req: Request, res: Response) => {
+  public allOrders = async (_req: Request, res: Response) => {
     const orders = await this.orderService.AllOrders();
     return res.status(200).json(orders);
   };
