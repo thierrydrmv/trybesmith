@@ -8,6 +8,11 @@ class OrderController {
     const orders = await this.orderService.AllOrders();
     return res.status(200).json(orders);
   };
+
+  // public newOrder = async (req: Request, res: Response) => {
+  //   const order = await this.orderService.newOrder(req.body);
+  //   return res.status(201).json(order);
+  // };
 }
 
 export default OrderController;

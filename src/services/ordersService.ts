@@ -13,6 +13,11 @@ class OrderService {
     const orders = await this.model.allOrders();
     return orders;
   }
+  
+  // public async newOrder(order: Order): Promise<Order> {
+  //   const createOrder = await this.model.newOrder(order);
+  //   return createOrder;
+  // }
 }
 
 export default OrderService;

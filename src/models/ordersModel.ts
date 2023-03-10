@@ -18,4 +18,7 @@ export default class OrderModel {
     const [rows] = orders;
     return rows as Order[];
   }
+
+  // public async newOrder(): Promise<Order> {
+  // }
 }
